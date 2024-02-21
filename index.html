@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            background-color: rgb(24, 34, 34);
+            border: 2px solid black;
+            /* height: ; */
+            display: grid;
+            /* grid-template-columns:repeat(3,100px) ;
+            grid-template-rows: 100px 100px; */
+            gap: 10px;
+            /* justify-content: center;
+            align-content: center; */
+            padding: 20px;
+            height: 90vh;
+            /* width: 100vh; */
+
+        }
+        .bottom{
+            background-color: red; 
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            
+        }
+        .cd1{
+            grid-column-start:1 ;
+            grid-column-end: 3;
+            background-color: rgb(90, 116, 122);
+           
+        }
+        .cd2{
+            grid-column-start:2 ;
+            grid-column-end: 3;
+            background-color: rgb(255, 191, 0);
+           
+        }
+        .cd3{
+            grid-column-start:3 ;
+            grid-column-end: 4;
+            background-color: rgb(0, 255, 55);
+            grid-row-start: 2;
+            grid-row-end: 5;
+           
+        }
+        .cd4{
+            grid-column-start:4 ;
+            grid-column-end: 5;
+            background-color: rgb(213, 128, 190);
+           
+        }
+        .cd5{
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            background-color: rgb(117, 117, 175);
+            
+        }
+        .cd6{
+            grid-column-start:1;
+            grid-column-end: 5;
+           background-color: rgb(183, 183, 223);
+           grid-row-start: 2;
+            grid-row-end: 6;
+        }
+        @media screen and (min-width:300px) and (max-width:576px){
+           .xtra-small {
+                
+                background-color: rgb(107, 107, 215); 
+
+            }
+            }
+
+            @media screen and (min-width:577px) and (max-width:768px){
+            .small {
+                background-color: rgb(173, 212, 31);
+            }
+            }
+
+            @media screen and (min-width:769px) and (max-width:992px){
+            .medium {
+                background-color: rgb(32, 154, 214);
+            }
+            }
+
+            @media screen and (min-width:993px) and (max-width:1200px){
+            .large {
+                background-color: rgb(146, 235, 146);
+            }
+            }
+
+            @media screen and (min-width:1201px) and (max-width:1300px){
+            .xtra-large {
+                background-color: rgb(147, 92, 92);
+            }
+            }
+            @media screen and (min-width:1301px){
+            .xxtra-large {
+                background-color: rgb(189, 17, 63);
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="top  xtra-small  small medium large xtra-large xxtra-large">
+        <div class="bottom cd1">one</div>
+        <div class="bottom cd2">two</div>
+        <div class="bottom cd3">three</div>
+        <div class="bottom cd4">four</div>
+        <div class="bottom cd5">five</div>
+        <div class="bottom cd6">six</div>
+    </div>
+</body>
+</html>
